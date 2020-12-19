@@ -18,7 +18,7 @@ the dragon is greedy and hungry, and will eat you on sight.
 	print()
 
 def chooseCave():
-	cave = ''
+	cave = '' # fixed indentation error
 	while cave != '1' and cave != '2':
 		print('Which cave will you go into? (1 or 2)')
 		cave = input('cave: ') # added cave to prompt the user on the screen
@@ -30,7 +30,7 @@ def checkCave(chosenCave):
 	time.sleep(2)
 	print('It is dark and spooky...')
 	#sleep for 2 seconds
-	time.sleep(3)
+	time.sleep(2) # changed sleep time from 3 to 2
 	print('A large dragon jumps out in front of you! He opens his jaws and...')
 	print()
 	#sleep for 2 seconds
@@ -51,4 +51,4 @@ while playAgain == 'yes' :    # this while was missing == , also removed the or 
 	print('Do you want to play again? (yes or no)')
 	playAgain = input()
 	if playAgain == "no" :
-		print("Thanks for planing")
+		print("Thanks for playing") # changed planing to playing
